@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adminster Page</title>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../admin.css"/>
+	<link rel="stylesheet" href="../menuBox.css"/>
+	<link rel="stylesheet" href="../../main.css"/>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../../js/menuBox.js"></script>
+	<style>
+		#main{
+			width:1000px;
+			height: 1100px;
+			background: #F5F5F5;
+			margin-top:20px;
+			border: 1px solid #ccc; 
+		}
+		#main #left{
+			float:left;
+			height: 1100px;
+			width:200px;
+			background: #696969;
+		}
+		#main #right{
+			height: 1100px;
+			width:800px;
+			float:left;
+		}
+		#main #right #add_seat,#delete_seat{
+			width:800px;
+			height:300px;
+			float:left;
+		}
+		#main #right #modify_seat{
+			width:800px;
+			height:500px;
+			float:left;
+		}
+		#main #right .word{
+			font-size:18px;
+			background:rgba(24 ,116, 205,0.8);
+			padding:10px 0px;
+			color: white;
+			margin-bottom: 50px;
+		}
+		#main #right .title{
+			font-size:16px;
+			text-align: left;
+			margin-left:200px;
+		}
+		#main #right input{
+			width:100px;
+			height:30px;
+			border-radius: 3px;
+			border: 1px solid #ccc; 
+		}
+		#main #right button{
+			padding: 5px 20px;
+			font-size:16px;
+			background: #FFFFFF;
+			text-align: center;
+			margin-left:0px;
+		}
+		#main #right button:hover{
+			background:rgba(24 ,116, 205,0.8) !important;
+			color:white;
+		}
+		#main #right button:active{
+			position:relative;
+			top:1px;
+		}
+		#main #right #modify_seat .title .word1 .ck{
+			width:30px;
+		}
+		#main #right #modify_seat .title .word1{
+			text-align: right;
+			margin-right:350px;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="../../image/logo/管理座位信息页.png" alt="logo">
+		</div>
+		<div id="nav">
+				<ul>
+				<li><a>预约自习座位</a></li>
+				<li><a>搜索图书</a></li>
+				<li><a>个人主页</a></li>
+				<li><a>管理员主页</a></li>
+				</ul>
+		</div>
+		<div id="login"><a href="../../login/login.html">登录/注册</a></div>
+	</div>
+	<div id="main">
+		<div id="left">
+			<div id="admin-info">
+				<p>admin</p>
+				<input id="logout" tyep="submit" value="注销">
+			</div>
+		</div>
+		<div id="leftNav" class="left-nav">
+			<div id="menuBox02" class="menuBox">
+					<div class="spMenuBox">					
+						<div class="spMenuItem">						
+							<div class="spMenu">
+								<i class="fa fa-building"></i>
+								<a href="admin.html"><span >管理员首页</span></a>	
+								<i class="fa fa-2x fa-angle-right"></i>				
+							</div>
+						</div>
+						<div class="spMenuItem">
+							<div class="spMenu">
+								<i class="fa fa-book"></i>
+								<span>书籍管理</span>
+								<i class="fa fa-2x fa-angle-down"></i>
+							</div>
+							<div class="subMenuBox">
+								<a href="../book/borrow.html"><span class="subMenu">线下借书</span></a>
+								<a href="../book/return.html"><span class="subMenu">线下还书</span></a>
+								<a href="../book/add.html"><span class="subMenu" >新增图书</span></a>
+								<a href="../book/modify.html"><span class="subMenu">修改书籍信息</span></a>
+							</div>
+						</div>
+						<div class="spMenuItem">
+							<div class="spMenu">
+								<i class="fa fa-building"></i>
+								<a href="seat.html"><span style="color:#FFD700">座位管理</span></a>
+								<i class="fa fa-2x fa-angle-right"></i>
+							</div>
+						</div>
+						<div class="spMenuItem">
+							<div class="spMenu">
+								<i class="fa fa-key"></i>
+								<a href="../pw/pw.html"><span>密码管理</span></a>
+								<i class="fa fa-2x fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="right">
+			<div id="add_seat">
+				<div class="word">增加座位</div>
+				<div class="title">座位位置：
+					<input  placeholder="请输入楼层" type="text" name="add_floor" required="true">-
+					<input  placeholder="请输入教室/区域" type="text" name="add_room" required="true">
+				</div>
+				<br>
+				<div class="title">座位数量：
+					<input  placeholder="请输入座位数量" type="text" name="add_seats" required="true">
+				</div>
+				<br><br>
+				<button name="add_summit" value="add_summit" id="add_summit" type="button">提交</button>
+			</div>
+			<div id="delete_seat">
+				<div class="word">删除座位</div>
+				<div class="title">座位位置：
+					<input  placeholder="请输入楼层" type="text" name="delete_floor" required="true">-
+					<input  placeholder="请输入教室/区域" type="text" name="delete_room" required="true">
+				</div>
+				<br>
+				<div class="title">座位数量：
+					<input  placeholder="请输入座位数量" type="text" name="delete_seats" required="true">
+				</div>
+				<br><br>
+				<button name="delete_ssummit" value="delete_summit" id="delete_summit" type="submit">提交</button>
+			</div>
+			<div id="modify_seat"> 
+				<div class="word">修改座位信息</div>
+				<div class="title">座位位置：
+					<input  placeholder="请输入楼层" type="text" name="modify_floor" required="true">-
+					<input  placeholder="请输入教室/区域" type="text" name="modify_room" required="true">
+				</div>
+				<br>
+				<div class="title">可预约时间：
+					<div class="word1">8-10时：
+						<input type="radio" name="8tf" value="yes" class="ck" checked >是
+						<input type="radio" name="8tf" value="no" class="ck">否
+					</div>
+					<div class="word1">10-12时：
+						<input type="radio" name="10tf" value="yes" class="ck" checked >是
+						<input type="radio" name="10tf" value="no" class="ck">否
+					</div>
+					<div class="word1">12-14时：
+						<input type="radio" name="12tf" value="yes" class="ck" checked >是
+						<input type="radio" name="12tf" value="no" class="ck">否
+					</div>
+					<div class="word1">14-16时：
+						<input type="radio" name="14tf" value="yes" class="ck" checked >是
+						<input type="radio" name="14tf" value="no" class="ck">否
+					</div>
+					<div class="word1">16-18时：
+						<input type="radio" name="16tf" value="yes" class="ck" checked >是
+						<input type="radio" name="16tf" value="no" class="ck">否
+					</div>
+					<div class="word1">18-20时：
+						<input type="radio" name="18tf" value="yes" class="ck" checked >是
+						<input type="radio" name="18tf" value="no" class="ck">否
+					</div>
+					<div class="word1">20-22时：
+						<input type="radio" name="20tf" value="yes" class="ck" checked >是
+						<input type="radio" name="20tf" value="no" class="ck">否
+					</div>
+				</div>
+				<br>
+				<button name="modify_summit" value="modify_summit" id="modify_summit" type="submit">提交</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+		$().ready(function() {
+			initLeftNavHeight();
+			initMenu();
+		})
+
+		/**初始化左侧导航栏高度**/
+		function initLeftNavHeight() {
+			initHeight();
+
+			function initHeight() {
+				var total = document.documentElement.clientHeight;
+				var topHeight = $("#top").height();
+				$("#leftNav").height(total - topHeight);
+			}
+
+			document.body.onresize = function() {
+				initHeight();
+			}
+		}
+
+		/**初始化菜单选项**/
+		function initMenu() {
+			
+			var config02 = {
+				//配置菜单的MenuBoxId
+				menuBoxId: "#menuBox02",
+				//是否可以打开多个上级菜单
+				multiple: false,
+				//初始化打开的上级菜单的index数组
+				openIndex: [-1]
+			}
+			menuBox.init(config02);
+		}
+	</script>
+</html>
+

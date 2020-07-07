@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Page</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<link href="search.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="../image/logo/检索图书页.png" alt="logo">
+		</div>
+		<div id="nav">
+				<ul>
+				<li><a>预约自习座位</a></li>
+				<li><a>搜索图书</a></li>
+				<li><a>个人主页</a></li>
+				<li><a>管理员主页</a></li>
+				</ul>
+		</div>
+		<div id="login"><a href="login/login.html">登录/注册</a></div>
+	</div>
+	<div id="main">
+		<div id="input-group">
+			<div class="input-group-btn hidden-xs hidden-sm">
+				<select class="fc" >
+					<option value="title" id="scope_title1" selected="selected"
+							class="EXLSelectedOption">题名</option>
+					<option value="creator" id="scope_creator1" class="EXLSelectOption">作者</option>
+					<option value="sub" id="scope_sub1" class="EXLSelectOption">主题</option>
+					<option value="lsr03" id="scope_lsr031" class="EXLSelectOption">出版社</option>
+					<option value="isbn" id="scope_isbn1" class="EXLSelectOption">ISBN</option>
+				</select>
+			</div><!-- /btn-group -->
+			<input type="text" placeholder="请输入搜索关键字"
+				   id="searchOpac">
+			<input id="sousuo" type="submit" value="搜索">
+		</div>
+		<div id="search_result"></div>
+	</div>
+</body>
+</html>

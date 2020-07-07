@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Confirm Page</title>
+<link href="../main.css" rel="stylesheet" type="text/css">
+	<style>
+		#main #chart{
+			margin-top: 100px;
+			width:600px;
+			height:500px;
+			background: rgba(245,245,245);
+			box-shadow: 10px 10px 5px #888888;
+			margin-left: 420px;
+			position:relative;
+		}
+		#main #chart p{
+			padding-top: 30px;
+			font-size:20px;
+			border:none;
+		}
+		#main #chart button{
+			float:left;
+			position:absolute; 
+			bottom:50px;
+			height:30px;
+			width:100px;
+			font-size:14px;
+			padding: 0px 10px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;	
+			background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+			background-color:#FFFFFF;
+		}
+		#main #chart button:hover{
+			background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+		}
+		#main #chart #back{
+			float:left;
+			left:180px;
+		}
+		#main #chart #confirm{
+			float:left;
+			left:340px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="../image/logo/确认借书页.png" alt="logo">
+		</div>
+		<div id="nav">
+				<ul>
+				<li><a>预约自习座位</a></li>
+				<li><a>搜索图书</a></li>
+				<li><a>个人主页</a></li>
+				<li><a>管理员主页</a></li>
+				</ul>
+		</div>
+		<div id="login"><a href="login/login.html">登录/注册</a></div>
+	</div>
+	<div id="main">
+		<div id="chart">
+			<p>确认借阅信息</p>
+			<div class="word">学号：</div>
+			<div class="word">书籍信息</div>
+			<button type="submit" name="back" id="back" onclick="javascript:history.back(-1);">返回上一页</button>
+			<button type="submit" name="confirm" id="confirm">确认提交</button>
+		</div>
+	</div>
+</body>
+</html>

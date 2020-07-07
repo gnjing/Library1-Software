@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Borrow Book Successful</title>
+	<style>
+		html {min-width:700px;}
+		body {text-align:center;margin:0;background:#fff;}
+		body > div {text-align:center;margin-right:auto;margin-left:auto;}
+		#main{
+			width:600px;
+			height:400px;
+			background: rgba(245,245,245);
+			box-shadow: 10px 10px 5px #888888;
+			margin-top: 200px;
+			padding-top: 40px;
+		}
+		#main p{
+			font-size:24px;
+		}
+		#main #inf p{
+			font-size:18px;
+			text-align: center;
+		}
+		#main button{
+			margin-top: 20px;
+			height:30px;
+			width:100px;
+			font-size:16px;
+			background: #FFFFFF;
+			border-radius: 3px;
+			border: 1px solid #ccc;  
+		}
+		#main button:hover{
+			background:rgba(24 ,116, 205,0.8);
+			color:white;
+		}
+		#main button:active {
+			position:relative;
+			top:1px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="logo"></div>
+	<div id="main">
+		<p>借书成功！</p>
+		<div id="inf">
+			<p>学号：</p>
+			<p>借书本数：</p>
+			<p>书籍名称：</p>
+		</div>
+		<button type="submit" id="summit" value="summit" onClick="javascript:window.location.href='borrow.html'">返回借书页</button>
+	</div>
+</body>
+</html>

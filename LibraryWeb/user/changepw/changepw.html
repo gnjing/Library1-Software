@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change Password</title>
+<link href="../../main.css" rel="stylesheet" type="text/css">
+<link href="../user.css" rel="stylesheet" type="text/css">
+<link href="changepw.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="../../image/logo/个人主页.png" alt="logo">
+		</div>
+		<div id="nav">
+				<ul>
+				<li><a>预约自习座位</a></li>
+				<li><a>搜索图书</a></li>
+				<li><a>个人主页</a></li>
+				<li><a>管理员主页</a></li>
+				</ul>
+		</div>
+		<div id="login"><a href="../../login/login.html">登录/注册</a></div>
+	</div>
+	<div id="main">
+		<div id="left">
+			<div id="user-info">
+				<p>用户名：</p>
+				<p>学号：</p>
+				<input type="submit" id="logout" value="注销">
+			</div>
+			<ul>
+				<li><a  href="../user.html">
+					<div class="image">
+					<img src="../../image/house.PNG" alt="我的首页"></div>
+					我的首页</a>
+				</li>
+				<li><a href="changepw.html"  style="color:#98F5FF;">
+					<div class="image">
+					<img src="../../image/key.PNG" alt="修改密码"></div>
+					修改密码</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<form id="form">
+				<div class="title">用户名：
+					<input type="text" disabled="disabled" placeholder="用户名">
+				</div>
+				<br>
+				<div class="title">原密码：
+					<input type="password" placeholder="请输入原密码" required="true">
+				</div>
+				<br>
+				<div class="title">修改新密码：
+					<input type="password" placeholder="请输入新密码" required="true">
+				</div>
+				<br>
+				<input id="change" type="submit" value="确认修改">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

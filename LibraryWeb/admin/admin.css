@@ -1,0 +1,49 @@
+/* CSS Document */
+a{color:white;}
+.subMenuBox a{color: black;}
+
+#main{
+	width:1000px;
+	height: 750px;
+	background: #F5F5F5;
+	margin-top:20px;
+	border: 1px solid #ccc; 
+}
+#main #left{
+	float:left;
+	height: 750px;
+	width:200px;
+	background: #696969;
+}
+#main #left #admin-info{
+	float:left;
+	height: 100px;
+	width:200px;
+	padding-top: 20px;
+}
+#main #left #admin-info p{
+	color: white;
+}
+#main #left #admin-info #logout{
+	height: 30px;
+	width:80px;
+	background:white;
+	margin-top: 20px;
+	border: 1px solid #ccc; 
+	border-radius: 3px;
+	text-align: center;
+}
+#main #left #admin-info #logout:hover{
+	background: #FFA500 !important;
+	color:white;
+	border: 1px solid #FF8C00; 
+}
+#main #left #admin-info #logout:active{
+	position:relative;
+	top:1px;
+}
+#main #right{
+	height: 750px;
+	width:800px;
+	float:left;
+}

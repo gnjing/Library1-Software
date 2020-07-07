@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Error!</title>
+<html>
+<head>
+    <title>Error Page</title>
+        <style type="text/css">
+			html {min-width:700px;}
+			body {margin:0;background:#fff;text-align:center}
+			body > div {margin-right:auto;margin-left:auto;}
+			.error{color: #666;font-size:20px;margin-top: 150px;}
+			.error #time{color: red;}
+			.word{font-size:200px;}
+			p{font-size:20px;}
+    	</style>
+</head>
+<body>
+    <div class="error">
+		<img src="image/notfound.JPG" alt="notfound">
+        啊哦？你是不是走错了呀？
+		<br>
+		<img src="image/404.png" alt="404">
+        <p>别担心！页面会在<span id="time">5</span>秒后跳转<a href="index.html">首页</a>，请稍等...</p>
+    </div>
+<script>
+    var sum =5;
+    function load(){
+        for(var i = sum-1;i>=0;i--){
+            changeTime(i);
+        }
+    }
+    function changeTime(i){
+        setTimeout(function(){
+            document.getElementById("time").innerHTML=i;
+            if(i < 1){
+                location.href="index.html";
+                //history.back(); 返回上个页面
+            }
+        },(sum-i)*1000);
+    }
+    load();
+</script>
+</body>
+</html>

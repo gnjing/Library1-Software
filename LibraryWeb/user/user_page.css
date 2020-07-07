@@ -1,0 +1,15 @@
+/* CSS Document */
+#main #right #jieyue{
+	width:800px;
+	height:375px;
+	float:left;
+}
+#main #right p{
+	padding-top:10px;
+	font-size:24px;
+}
+#main #right #yuyue{
+	width:800px;
+	height:375px;
+	float:left;
+}

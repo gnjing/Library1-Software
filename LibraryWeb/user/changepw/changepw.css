@@ -1,0 +1,47 @@
+/* CSS Document */
+#main #right #form{
+	float:left;
+	margin-left:200px;
+	margin-top: 200px;
+}
+
+#main #right #form .title{
+	font-size:18px;
+	text-align: right;
+	margin-right:200px;
+}
+#main #right #form br{
+	display:inline; 
+	line-height: 30px;
+}
+#main #right #form input{
+	position: relative;
+	height:20px;
+	font-size:18px;	
+	margin-left:5px;
+	border: 1px solid #ccc;  /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+	padding: 7px 0px; /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+	border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+	padding-left:5px; /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+#main #right #form #change{
+	font-size:16px;
+	padding: 5px 20px;
+	height:30px;
+	margin-left: 150px;
+	float:left;
+	background: #FFFFFF;
+}
+#main #right #form #change:hover{
+	background:rgba(24 ,116, 205,0.8);
+	color:white;
+}
+#main #right #form #change:active{
+	position:relative;
+	top:1px;
+}

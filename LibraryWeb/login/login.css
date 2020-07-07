@@ -1,0 +1,74 @@
+/* CSS Document */
+html {min-width:700px;}
+body {text-align:center;margin:0;background:#fff;}
+body > div {text-align:center;margin-right:auto;margin-left:auto;}
+#main{
+	height:904px;
+	width:1440px;
+	background-image: url(../image/timg-3.jpeg);
+}
+#main #logo{
+	height:50px;
+	width:167px;
+	float:left;
+}
+#main #logo img{
+	width: auto;  
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%;
+}
+#main #sheet{
+	height:400px;
+	width:600px;
+	background: rgba(245,245,245,0.6);
+	float:left;
+	margin-left: 270px;
+	margin-top: 200px;
+	box-shadow: 10px 10px 5px #888888;
+}
+#main #sheet p{
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	font-size: 28px;
+	margin-top: 60px;
+}
+#main #sheet #form{
+	margin-top: 40px;
+}
+#main #sheet #form input{
+	border: 1px solid #ccc;  /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+	padding: 7px 0px; /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+	border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+	padding-left:5px; /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+ #main #sheet #form input:focus{
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+#main #sheet #form #denglu{
+	padding: 5px 20px;
+	font-size:16px;
+	background: #FFFFFF;
+}
+#main #sheet #form #denglu:hover{
+	background:rgba(24 ,116, 205,0.8);
+	color:white;
+}
+#main #sheet #form #denglu:active {
+	position:relative;
+	top:1px;
+}
+#main #sheet a{
+	font-size:14px;
+}
+#main #sheet a:hover{
+	text-decoration: underline;
+	color:#ED7D31;
+}

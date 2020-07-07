@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+<link href="register.css" rel="stylesheet" type="text/css">
+	<script>
+		function validate(){
+			var pwd1=document.getElementById('pwd').value;
+			var pwd2=document.getElementById('pwd1').value;
+			if(pwd1 == pwd2) {
+                  document.getElementById("tishi").innerHTML="<font color='green'>两次密码相同</font>";
+                  document.getElementById("zhuce").disabled = false;
+              }
+              else {
+				  document.getElementById("tishi").innerHTML="<font color='red'>两次密码不相同</font>";
+				  document.getElementById("zhuce").disabled = true;
+              }
+          }
+		function check(){
+			var str=document.getElementById("name").value; 
+			var reg =new RegExp("^[a-zA-Z]");
+				if (reg.test(str)) 
+				{ 
+					document.getElementById("tishi1").innerHTML="<font color='green'>输入正确</font>";
+					document.getElementById("zhuce").disabled = false;
+				 }  
+			   else {
+				   document.getElementById("tishi1").innerHTML="<font color='red'>第一个字符必须是字母</font>";
+				   document.getElementById("zhuce").disabled = true;
+				}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<div id="logo">
+			<img src="./image/logo/注册页.PNG" alt="logo">
+		</div>
+		<div id="sheet">
+			<p>注册账号</p>
+			<form id="form" action="UserServlet">
+				<div class="title">学号：
+					<input  placeholder="请输入学号" type="text" name="no" id="num" required="true" >
+				</div>
+				<br>
+				<div class="title">用户名：
+					<input  placeholder="请输入字母开头的用户名" type="text" name="user"  id="name" required="true"  onkeyup="check()"><span id="tishi1"></span>
+				</div>
+				<br>
+				<div class="title">密码：
+					<input  placeholder="请输入密码" type="password" name="pwd"  id="pwd" required="true" >
+				</div>
+				<br>
+				<div class="title">再次输入密码：
+					<input  placeholder="请输入再次密码" type="password" name="pwa" id="pwd1" required="true"  onkeyup="validate()"><span id="tishi"></span>
+				</div>
+				<br><br>
+                                <input type="hidden" name="page" value="register">
+				<button id="zhuce" type="submit" name="submit" value="zhuce">注册</button>
+			</form> 
+		</div>
+	</div>
+</body>
+</html>

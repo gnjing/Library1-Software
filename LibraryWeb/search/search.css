@@ -1,0 +1,75 @@
+/* CSS Document */
+#main{
+	weight:1440px;
+	background-image:url(image/bk.JPG);
+}
+#main #input-group{
+	height: 100px;
+	width:1440px;
+}
+#main #input-group #searchOpac{
+	height: 35px;
+	width:250px;
+	font-size:14px;
+	float:left;
+	position: relative;
+	z-index: 1;
+	margin-top: 35px;
+	margin-left: -85px;
+	border: 1px solid #ccc;  /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+	padding: 7px 0px; /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+	border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+	padding-left:90px; /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+#main #input-group #sousuo{
+	float:left;
+	font-size:16px;
+	margin-top:38px;
+	margin-left:5px;
+	width: 60px;
+	height: 45px;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#FFFFFF;
+	-webkit-appearance: button;
+	border-radius:3px;
+	border:1px solid #ccc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+}
+#main #input-group #sousuo:hover{
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+}
+#main #input-group #sousuo:active {
+	position:relative;
+	top:1px;
+}
+#main #input-group select {
+	float:left;
+	margin-left:560px;
+	margin-top: 40px;
+	font-size:14px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #cccccc;
+	border-radius: 3px;	
+    border-right: none;
+	appearance: none;       /* IE */
+    -moz-box-shadow: none; /* For Firefox3.6+ */
+    -webkit-box-shadow: none; /* For Chrome5+, Safari5+ */
+    box-shadow: none;
+	position: relative;
+	z-index: 2;
+	background: white;
+}
+#main #search_result{
+	border-top: 2px solid #ccc; 
+	margin-top: 20px;
+}

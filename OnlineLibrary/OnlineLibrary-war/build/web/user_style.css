@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-7-5, 21:05:01
+    Author     : lh_11
+*/
+
+/* CSS Document */
+#main #right #jieyue{
+	width:800px;
+	height:375px;
+	float:left;
+}
+#main #right p{
+	padding-top:10px;
+	font-size:24px;
+}
+#main #right #yuyue{
+	width:800px;
+	height:375px;
+	float:left;
+}
+
+#usernames {
+
+}
+
+.col12 {
+
+}
